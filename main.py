@@ -25,8 +25,7 @@ if submit and not video_length>=0.1:
 
 if submit:
    with st.spinner("🤖AI 智慧生成中🤖"):
-      search_result,title,script = generate_script(subject, video_length, creativity, open_ai_key)
-      
+      search_result,title,script = generate_script(subject, video_length, creativity, open_ai_key) 
    st.success("🎉腳本生成成功🎉")
    st.subheader("📝腳本內容📝")
    st.write(title)
